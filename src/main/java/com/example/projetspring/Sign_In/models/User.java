@@ -1,4 +1,4 @@
-package com.example.projetspring.models;
+package com.example.projetspring.Sign_In.models;
 
 import jakarta.persistence.*;
 

@@ -1,5 +1,5 @@
-package com.example.projetspring.Repository;
-import com.example.projetspring.models.User;
+package com.example.projetspring.Sign_In.Repository;
+import com.example.projetspring.Sign_In.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

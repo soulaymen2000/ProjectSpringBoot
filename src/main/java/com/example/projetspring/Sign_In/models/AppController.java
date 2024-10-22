@@ -1,7 +1,8 @@
-package com.example.projetspring.models;
+package com.example.projetspring.Sign_In.models;
 
-import com.example.projetspring.Repository.UserRepository;
+import com.example.projetspring.Sign_In.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,8 +24,11 @@ public class AppController {
     }
     @PostMapping("/process_register")
     public String processRegistration(User user) {
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+        String encodedPassword = encoder.encode(user.getPassword());
+        user.setPassword(encodedPassword);
         repo.save(user);
-        return "register_success";
+        return "register_sucess";
     }
     @GetMapping("/list_users")
     public String ViewListUsers(Model model) {

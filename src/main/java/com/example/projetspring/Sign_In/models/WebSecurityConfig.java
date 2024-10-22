@@ -1,6 +1,6 @@
-package com.example.projetspring.models;
+package com.example.projetspring.Sign_In.models;
 
-import com.example.projetspring.Service.CustomUserDetailsService;
+import com.example.projetspring.Sign_In.Service.CustomUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

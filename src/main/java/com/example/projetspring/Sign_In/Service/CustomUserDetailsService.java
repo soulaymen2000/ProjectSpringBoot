@@ -1,8 +1,8 @@
-package com.example.projetspring.Service;
+package com.example.projetspring.Sign_In.Service;
 
-import com.example.projetspring.Repository.UserRepository;
-import com.example.projetspring.models.CustomUserDetails;
-import com.example.projetspring.models.User;
+import com.example.projetspring.Sign_In.Repository.UserRepository;
+import com.example.projetspring.Sign_In.models.CustomUserDetails;
+import com.example.projetspring.Sign_In.models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,7 +1,7 @@
 package com.example.projetspring;
 
-import com.example.projetspring.Repository.UserRepository;
-import com.example.projetspring.models.User;
+import com.example.projetspring.Sign_In.Repository.UserRepository;
+import com.example.projetspring.Sign_In.models.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
